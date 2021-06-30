@@ -1,0 +1,10 @@
+.footer {
+    background-color: black;
+    color: white;
+    &__logo {
+        max-width: 150px;
+    }
+    &__menu__link--flex {
+        display: flex;
+    }
+}

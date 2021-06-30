@@ -1,0 +1,72 @@
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+.header__logo {
+  position: relative;
+}
+.header__logo img {
+  max-width: 200px;
+}
+.header__arrow {
+  text-align: start;
+  font-size: 2rem;
+  position: absolute;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+.footer__logo {
+  max-width: 150px;
+}
+.footer__menu__link--flex {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */

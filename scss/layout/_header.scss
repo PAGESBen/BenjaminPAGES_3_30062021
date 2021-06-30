@@ -1,0 +1,16 @@
+.header {
+    text-align: center;
+    padding: 20px;
+    &__logo {
+        position: relative;
+        img {
+            max-width: 200px;
+        }
+    }
+    &__arrow {
+        text-align: start;
+        font-size: 2rem;
+        position: absolute;
+    }
+}
+
