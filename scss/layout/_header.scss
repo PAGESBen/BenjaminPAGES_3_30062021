@@ -1,16 +1,17 @@
 .header {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     &__logo {
         position: relative;
-        img {
-            max-width: 200px;
-        }
+        font-family: $font-logo !important;
+        font-size: 1.5rem;
     }
     &__arrow {
         text-align: start;
         font-size: 2rem;
         position: absolute;
+        display: none;
     }
 }
 
+ 

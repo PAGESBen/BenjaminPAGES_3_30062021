@@ -6,28 +6,33 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/99f56a38e8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header class="header">
-    <div class="header__arrow">
-        <i class="fas fa-arrow-left"></i>
-    </div>
     <div class="header__logo">
-        <img src="./img/logo/ohmyfood.png" alt="logo ohmyfood">
+        <p>ohmyfood</p>
     </div>
 </header>
 
-<section class="teaser">
-    <div class="teaser__icon">
-        <i class="fas fa-map-marker-alt"></i>
+<div class="teaser">
+    <div class="teaser__search">
+        <div class="teaser__search__icon">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <input type="search" name="city" placeholder="Paris, Belleville" id="" class="teaser__search__input">
     </div>
-    <input type="search" name="city" placeholder="Paris, Belleville" id="" class="teaser__inputsearch">
     <h1 class="teaser__title">Réservez le menu qui vous convient</h1>
     <p class="teaser__description">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-    <button class="teaser__btn">Explorer nos restaurants</button>
-</section>
+    <button class="teaser__btn btn">Explorer nos restaurants</button>
+</div>
 
 <section class="howto">
 
@@ -105,18 +110,17 @@
 
 <footer class="footer">
 
-    <div class="footer__logo"></div>
-    <img src="./img/logo/ohmyfood.png" alt="logo ohmyfood">
+    <p class="footer__logo">ohmyfood</p>
 
     <ul class="footer__menu">
-        <li class="footer__menu__link footer__menu__link--flex">
-            <a href="#">
+        <li class="footer__menu__link">
+            <a href="#" class="footer__menu__link--flex">
                 <i class="fas fa-utensils"></i>
-                <p>Proposer un restaurant</p>
+                <p> Proposer un restaurant</p>
             </a>
         </li>
-        <li class="footer__menu__link footer__menu__link--flex">
-            <a href="#">
+        <li class="footer__menu__link">
+            <a href="#" class="footer__menu__link--flex">
                 <i class="fas fa-hands-helping"></i>
                 <p>Devenir partenaire</p>
             </a>

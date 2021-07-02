@@ -1,10 +1,24 @@
 .footer {
     background-color: black;
     color: white;
+    padding: 15px;
     &__logo {
-        max-width: 150px;
+        font-family: $font-logo;
+        padding-bottom: 10px;
+    }
+    &__menu__link {
+        margin: 5px 0;
+    }
+    &__menu__link i {
+        margin-right: 10px;
+        color: white;
+        font-size: 0.7rem;
+    }
+    &__menu__link p {
+        color: white;
     }
     &__menu__link--flex {
         display: flex;
+        align-items: center;
     }
 }
