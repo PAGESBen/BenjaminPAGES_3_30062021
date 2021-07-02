@@ -3,9 +3,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO : Un title plus en rapport avec le projet ? -->
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/99f56a38e8.js" crossorigin="anonymous"></script>
+    <!-- TODO : Attention, vis à vis de google font, les deux premiers fichiers ne sont à appeler qu'une seul fois. Il s'agit de fichiers qui permettrons de faire fonctionner les fonts. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -22,24 +24,33 @@
     </div>
 </header>
 
+<!-- TODO : BEM : teaser et la section, search est l'emplacement et icon est l'action. Favoriser donc teaser-search puis teaser-search__icon etc -->
 <div class="teaser">
+    <!-- TODO : BEM : teaser-search -->
     <div class="teaser__search">
+        <!-- TODO : BEM : teaser-search__icon -->
         <div class="teaser__search__icon">
             <i class="fas fa-map-marker-alt"></i>
         </div>
+        <!-- TODO : BEM : teaser-search__input -->
         <input type="search" name="city" placeholder="Paris, Belleville" id="" class="teaser__search__input">
     </div>
+    <!-- TODO : BEM : teaser-title -->
     <h1 class="teaser__title">Réservez le menu qui vous convient</h1>
+    <!-- TODO : BEM : teaser-description -->
     <p class="teaser__description">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+    <!-- TODO : BEM : teaser-btn -->
     <button class="teaser__btn btn">Explorer nos restaurants</button>
 </div>
 
+<!-- TODO : De la même manière que teaser, revoir le pattern BEM -->
 <section class="howto">
 
     <h2 class="howto__title">Fonctionnement</h2>
     
     <div class="howto__step">
         <div class="howto__step__number">
+            <!-- TODO : p -> span -->
             <p>1</p>
         </div>
         <i class="fas fa-mobile-alt"></i>
@@ -48,6 +59,7 @@
     
     <div class="howto__step">
         <div class="howto__step__number">
+            <!-- TODO : p -> span -->
             <p>2</p>
         </div>
         <i class="fas fa-list-ul"></i>
@@ -56,6 +68,7 @@
     
     <div class="howto__step">
         <div class="howto__step__number">
+            <!-- TODO : p -> span -->
             <p>3</p>
         </div>
         <i class="fas fa-store"></i>
@@ -65,19 +78,25 @@
 </section>
 
 <main>
+    <!-- TODO : BEM : De la même manière que teaser, revoir le pattern BEM -->
 <section class="results">
 
+    <!-- TODO : Attention au BEM -->
     <article class="results__article">
+        <!-- TODO : Il manque la balise figure. De préférence utiliser aussi figcaption -->
         <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+        <!-- TODO : Pas besoin du div -->
         <div>
             <span>Nouveau</span>
         </div>
         <h3>La palette du goût</h3>
         <p>Ménilmontant</p>
+        <!-- TODO : Le plus propre est de regrouper des éléments d'une animation dans une div identifié par une classe plutôt générique (de plus, le coeur est utilisé à plusieurs endroits) -->
         <i class="far fa-heart"></i>
         <i class="fas fa-heart"></i>
     </article>
 
+    <!-- TODO : Idem premier article -->
     <article class="results__article">
         <img src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
         <div>
@@ -89,6 +108,7 @@
         <i class="fas fa-heart"></i>
     </article>
 
+    <!-- TODO : Idem premier article -->
     <article class="results__article">
         <img src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
         <h3>&#192; la Française</h3>
@@ -97,6 +117,7 @@
         <i class="fas fa-heart"></i>
     </article>
 
+    <!-- TODO : Idem premier article -->
     <article class="results__article">
         <img src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
         <h3>Le délice du sens</h3>
@@ -108,6 +129,7 @@
 </section>
 </main>
 
+<!-- TODO : Revoir le BEM -->
 <footer class="footer">
 
     <p class="footer__logo">ohmyfood</p>
