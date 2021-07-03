@@ -3,7 +3,7 @@
     padding: 10px;
     &__logo {
         position: relative;
-        font-family: $font-logo !important;
+        font-family: $font-logo;
         font-size: 1.5rem;
     }
     &__arrow {
@@ -13,5 +13,3 @@
         display: none;
     }
 }
-
- 
