@@ -3,16 +3,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- TODO : Un title plus en rapport avec le projet ? -->
-    <title>Document</title>
+    <title>ohmyfood</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/99f56a38e8.js" crossorigin="anonymous"></script>
-    <!-- TODO : Attention, vis à vis de google font, les deux premiers fichiers ne sont à appeler qu'une seul fois. Il s'agit de fichiers qui permettrons de faire fonctionner les fonts. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
@@ -42,8 +38,7 @@
     
     <div class="howto__step">
         <div class="howto__step__number">
-            <!-- TODO : p -> span -->
-            <p>1</p>
+            <span>1</span>
         </div>
         <i class="fas fa-mobile-alt"></i>
         <p>Choisissez un restaurant</p>
@@ -51,8 +46,7 @@
     
     <div class="howto__step">
         <div class="howto__step__number">
-            <!-- TODO : p -> span -->
-            <p>2</p>
+            <span>2</span>
         </div>
         <i class="fas fa-list-ul"></i>
         <p>Composez votre menu</p>
@@ -60,8 +54,7 @@
     
     <div class="howto__step">
         <div class="howto__step__number">
-            <!-- TODO : p -> span -->
-            <p>3</p>
+            <span>3</span>
         </div>
         <i class="fas fa-store"></i>
         <p>Dégustez au restaurant</p>
@@ -72,49 +65,78 @@
 <main>
 <section class="results">
 
-    <!-- TODO : Ne pas oublier le lien vers le restaurant (le plus propre est de mettre un balise a sur l'image et sur les textes (img + nouveau, h3, p) )-->
     <article class="results__article">
         <!-- TODO : Il manque la balise figure. De préférence utiliser aussi figcaption -->
-        <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-        <!-- TODO : Pas besoin de la div -->
-        <div>
+        <a href="#">
+            <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+        </a>
+        <a href="#">
             <span>Nouveau</span>
+        </a>
+        <a href="#">
+            <h3>La palette du goût</h3>
+        </a>
+        <a href="#">
+            <p>Ménilmontant</p>
+        </a>
+        <div class="results__article__favorite">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart"></i>
         </div>
-        <h3>La palette du goût</h3>
-        <p>Ménilmontant</p>
-        <!-- TODO : Le plus propre est de regrouper des éléments d'une animation dans une div identifié par une classe plutôt générique (de plus, le coeur est utilisé à plusieurs endroits) -->
-        <i class="far fa-heart"></i>
-        <i class="fas fa-heart"></i>
     </article>
 
     <!-- TODO : Idem premier article -->
     <article class="results__article">
-        <img src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
-        <div>
+        <a href="#">
+            <img src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+        </a>
+        <a href="#">
             <span>Nouveau</span>
+        </a>
+        <a href="#">
+            <h3>La note enchantée</h3>
+        </a>
+        <a href="#">
+            <p>Charonne</p>
+        </a>
+        <div class="results__article__favorite">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart"></i>
         </div>
-        <h3>La note enchantée</h3>
-        <p>Charonne</p>
-        <i class="far fa-heart"></i>
-        <i class="fas fa-heart"></i>
     </article>
 
     <!-- TODO : Idem premier article -->
     <article class="results__article">
-        <img src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
-        <h3>&#192; la Française</h3>
-        <p>Cité Rouge</p>
-        <i class="far fa-heart"></i>
-        <i class="fas fa-heart"></i>
+        <a href="./Restaurants/a-la-française.html">
+            <img src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+        </a>
+        <a href="./Restaurants/a-la-française.html">
+            <h3>&#192; la Française</h3>
+        </a>
+        <a href="./Restaurants/a-la-française.html">
+            <p>Cité Rouge</p>
+        </a>
+        <div class="results__article__favorite">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart"></i>
+        </div>
     </article>
 
     <!-- TODO : Idem premier article -->
     <article class="results__article">
-        <img src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
-        <h3>Le délice du sens</h3>
-        <p>Folie-Méricourt</p>
-        <i class="far fa-heart"></i>
-        <i class="fas fa-heart"></i>
+        <a href="#">
+            <img src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+        </a>
+        <a href="#">
+            <h3>Le délice du sens</h3>
+        </a>
+        <a href="#">
+            <p>Folie-Méricourt</p>
+        </a>
+        <div class="results__article__favorite">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart"></i>
+        </div>
     </article>
 
 </section>
