@@ -180,6 +180,7 @@ input[type=search]:focus {
   color: #7e7e7e;
 }
 .howto__step__description {
+  font-weight: bold;
   margin-top: 1px;
   margin-left: 15px;
 }
