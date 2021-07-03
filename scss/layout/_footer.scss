@@ -1,25 +1,28 @@
 .footer {
-    background-color: black;
+    background-color: #353535;
     color: white;
     padding: 15px;
     &__logo {
         font-family: $font-logo;
         padding-bottom: 10px;
     }
-    &__menu__link {
-        margin: 5px 0;
-    }
-    /* TODO : Améliorer l'imbrication */
-    &__menu__link i {
-        margin-right: 10px;
-        color: white;
-        font-size: 0.7rem;
-    }
-    &__menu__link p {
-        color: white;
-    }
-    &__menu__link--flex {
-        display: flex;
-        align-items: center;
+    &__menu {
+        &__link {
+            margin: 5px 0;
+        }
+        &__link {
+            i {
+            margin-right: 10px;
+            color: white;
+            font-size: 0.7rem;
+            }
+            p {
+            color: white;
+            }
+            &--flex {
+            display: flex;
+            align-items: center;
+            }
+        }
     }
 }

@@ -83,10 +83,9 @@ input[type=search]:focus {
 }
 
 .footer {
-  background-color: black;
+  background-color: #353535;
   color: white;
   padding: 15px;
-  /* TODO : Améliorer l'imbrication */
 }
 .footer__logo {
   font-family: "Shrikhand", cursive;
