@@ -142,12 +142,12 @@ input[type=search]:focus {
 }
 
 .howto {
-  padding: 50px 15px;
+  padding: 50px 20px;
 }
 .howto__title {
   font-size: 1.3rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .howto__step {
   display: flex;
@@ -182,6 +182,53 @@ input[type=search]:focus {
   font-weight: bold;
   margin-top: 1px;
   margin-left: 15px;
+}
+
+.results {
+  background-color: #f6f6f6;
+  padding: 50px 20px;
+}
+.results__title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.results__article {
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0 4px 8px #aaaaaa;
+  position: relative;
+}
+.results__article__img {
+  object-fit: cover;
+  width: 100%;
+  height: 175px;
+}
+.results__article__tag {
+  color: #008766;
+  background-color: #00d4a0;
+  padding: 3px 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+.results__article__favorite {
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+  font-size: 1.3em;
+}
+.results__article__title {
+  font-weight: bold;
+  margin: 15px 0 5px 10px;
+}
+.results__article__location {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

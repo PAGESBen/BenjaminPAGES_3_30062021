@@ -1,0 +1,46 @@
+.results {
+    background-color: $background-color;
+    padding : 50px 20px;
+    &__title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom : 30px;   
+    }
+    &__article {
+        height: 250px;
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 20px 0;
+        background-color: white;;
+        @include shadow;
+        position: relative;
+        &__img {
+            object-fit: cover;
+            width: 100%;
+            height: 175px;
+        }
+        &__tag {
+            color: $tag-color;
+            background-color: lighten($tag-color, 15%);
+            padding: 3px 8px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            position: absolute;
+            right: 12px;
+            top: 12px;
+        }
+        &__favorite {
+            position: absolute;
+            right: 20px;
+            bottom: 25px;
+            font-size: 1.3em;
+        }
+        &__title {
+            font-weight : bold;
+            margin: 15px 0 5px 10px;
+        }
+        &__location {
+            margin-left: 10px;
+        }
+    }
+}
