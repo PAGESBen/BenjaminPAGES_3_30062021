@@ -1,6 +1,7 @@
 .header {
     text-align: center;
     padding: 10px;
+    position: relative;
     &__logo {
         position: relative;
         font-family: $font-logo;
@@ -8,8 +9,9 @@
     }
     &__arrow {
         text-align: start;
-        font-size: 2rem;
+        font-size: 1.3rem;
         position: absolute;
-        display: none;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }

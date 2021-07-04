@@ -3,10 +3,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- TODO : Attention au title -->
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- TODO : Manque la font -->
+    <title>A la Française</title>
+    <link rel="stylesheet" href=".././css/style.css">
+    <script src="https://kit.fontawesome.com/99f56a38e8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/99f56a38e8.js" crossorigin="anonymous"></script>
 </head>
 
@@ -16,82 +19,79 @@
             <i class="fas fa-arrow-left"></i>
         </div>
         <div class="header__logo">
-            <img src="./img/logo/ohmyfood.png" alt="logo ohmyfood">
+            <p>ohmyfood</p>
         </div>
     </header>
 
-    <main>
+    <div class="main-img">
+        <img src="../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+    </div>
+    
+    <main class="menu">
 
-        <div class="mainimg">
-            <img src="../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+        <h1 class="menu__restaurant-name">&#192; la Française</h1>
+
+        <div class="menu__favorite">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart"></i>
         </div>
 
-        <h1>&#192; la Française</h1>
-        <!-- TODO : Animation coeur : idem page d'accueil : mettre regrouper dans une div -->
-        <i class="far fa-heart"></i>
-        <i class="fas fa-heart"></i>
-
         <section>
-            <h2>ENTR&#201;ES</h2>
+            <h2 class="menu__title">ENTR&#201;ES</h2>
 
-            <article>
+            <article class="menu__article">
                 <h3>Tartare de poulpe acidulé</h3>
                 <p>Aux zestes d'orange</p>
                 <span>25€</span>
             </article>
 
-            <article>
+            <article class="menu__article">
                 <h3>Velouté de légumes d'antan</h3>
                 <p>Carotte, panais, topinambour</p>
                 <span>35€</span>
             </article>
 
-            <article>
+            <article class="menu__article">
                 <h3>Soupe à l'oignon</h3>
                 <p>Revisitée</p>
                 <span>20€</span>
             </article>
-        </section>
 
-        <section>
-            <h2>PLATS</h2>
+            <h2 class="menu__title">PLATS</h2>
 
-            <article>
+            <article class="menu__article">
                 <h3>Coquilles Saint-Jacques</h3>
                 <p>Accompagnées d'une purée de panais</p>
                 <span>40€</span>
             </article>
 
-            <article>
+            <article class="menu__article">
                 <h3>Magret de canard</h3>
                 <p>Et parmentier de pommes de terre</p>
                 <span>35€</span>
             </article>
 
-            <article>
+            <article class="menu__article">
                 <h3>Pigeonneau d’Ille-et-Vilaine</h3>
                 <p>Sur son lit de gnocchis aux légumes</p>
                 <span>44€</span>
             </article>
 
-        </section>
+            <h2 class="menu__title">DESSERTS</h2>
 
-        <section>
-            <h2>DESSERTS</h2>
-
-            <article>
+            <article class="menu__article">
                 <h3>Pétales de violettes glacés</h3>
                 <p>Et purée de noisettes</p>
                 <span>18€</span>
             </article>
 
-            <article>
+            <article class="menu__article">
                 <h3>Fondant au chocolat</h3>
                 <p>Revisité</p>
                 <span>22€</span>
             </article>
 
-            <article>
+            <article class="menu__article">
                 <h3>Millefeuille croustillant</h3>
                 <p>Myrtilles et pâte d’amande</p>
                 <span>23€</span>
@@ -99,14 +99,13 @@
 
         </section>
 
-        <button>Commander</button>
-
+        <button class=" menu__btn btn">Commander</button>
     </main>
 
     <footer class="footer">
 
         <p class="footer__logo">ohmyfood</p>
-    
+
         <ul class="footer__menu">
             <li class="footer__menu__link">
                 <a href="#" class="footer__menu__link--flex">
@@ -131,7 +130,7 @@
                 </a>
             </li>
         </ul>
-    
+
     </footer>
 
 </body>
