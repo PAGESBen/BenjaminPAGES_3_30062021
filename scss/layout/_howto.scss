@@ -1,14 +1,31 @@
 .howto {
+    max-width: 1400px;
+    margin: auto;
     padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @include mobile {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
     &__title {
         font-size: 1.3rem;
         font-weight: bold;
-        margin-bottom : 30px;     
+        margin-bottom : 20px;     
+        width: 100%;
     }
     &__step {
+        min-width: 30%;
         display: flex;
+        flex-direction: column;
+        text-align: center;
+        @include mobile {
+            flex-direction: row;
+            text-align: left;
+        }
         position: relative;
-        margin: 20px 0 20px 20px;
+        margin: 10px 0 10px 20px;
         padding: 1.5rem;
         border-radius: 1rem;
         @include shadow;
@@ -29,13 +46,13 @@
         }
         &__icon {
             min-width: 35px;
-            margin-top: 3px;
+            padding: 5px 0;
             text-align: center;
             color : $font-secondary-color;
         }
         &__description {
             font-weight: bold;
-            margin-top: 1px;
+            margin-top: 3px;
             margin-left: 15px;
         }
     }

@@ -1,16 +1,30 @@
-.results {
+.background {
     background-color: $background-color;
+}
+
+.results {
+    max-width: 1400px;
+    margin: auto;
     padding : 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     &__title {
         font-size: 1.3rem;
         font-weight: bold;
-        margin-bottom : 30px;   
+        width: 100%; 
     }
     &__article {
+        max-width: 45%;
+        margin: 20px 10px;
+        @include mobile {
+            max-width: 100%;
+            margin : 20px 0;
+        }
         height: 250px;
         border-radius: 15px;
         overflow: hidden;
-        margin: 20px 0;
+
         background-color: white;
         @include shadow;
         position: relative;

@@ -7,10 +7,23 @@
         padding-bottom: 10px;
     }
     &__menu {
-        &__link {
-            margin: 5px 0;
+        display: flex;
+        flex-wrap: wrap;
+        @include mobile {
+            flex-direction: column;
         }
         &__link {
+            padding: 5px 15px;
+            @each $child in 1, 2, 3 {
+                &--#{$child} {
+                    border-right : 2px solid white;
+                }
+            }
+            @include mobile {
+                margin: 5px 0;
+                padding: 0;
+                border: 0;
+            }
             i {
             margin-right: 10px;
             color: white;

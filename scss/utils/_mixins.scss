@@ -1,3 +1,9 @@
 @mixin shadow {
     box-shadow: 0 4px 8px darken($background-color, 30%);
 }
+
+@mixin mobile {
+    @media screen and (max-width : map-get($breakpoint, mobile)) {
+        @content
+    }
+}

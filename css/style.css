@@ -109,8 +109,33 @@ a:visited {
   font-family: "Shrikhand", cursive;
   padding-bottom: 10px;
 }
+.footer__menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 570px) {
+  .footer__menu {
+    flex-direction: column;
+  }
+}
 .footer__menu__link {
-  margin: 5px 0;
+  padding: 5px 15px;
+}
+.footer__menu__link--1 {
+  border-right: 2px solid white;
+}
+.footer__menu__link--2 {
+  border-right: 2px solid white;
+}
+.footer__menu__link--3 {
+  border-right: 2px solid white;
+}
+@media screen and (max-width: 570px) {
+  .footer__menu__link {
+    margin: 5px 0;
+    padding: 0;
+    border: 0;
+  }
 }
 .footer__menu__link i {
   margin-right: 10px;
@@ -160,21 +185,42 @@ a:visited {
 }
 
 .howto {
+  max-width: 1400px;
+  margin: auto;
   padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media screen and (max-width: 570px) {
+  .howto {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 .howto__title {
   font-size: 1.3rem;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 .howto__step {
+  min-width: 30%;
   display: flex;
+  flex-direction: column;
+  text-align: center;
   position: relative;
-  margin: 20px 0 20px 20px;
+  margin: 10px 0 10px 20px;
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 8px #aaaaaa;
   background-color: #f6f6f6;
+}
+@media screen and (max-width: 570px) {
+  .howto__step {
+    flex-direction: row;
+    text-align: left;
+  }
 }
 .howto__step__number {
   position: absolute;
@@ -192,33 +238,48 @@ a:visited {
 }
 .howto__step__icon {
   min-width: 35px;
-  margin-top: 3px;
+  padding: 5px 0;
   text-align: center;
   color: #7e7e7e;
 }
 .howto__step__description {
   font-weight: bold;
-  margin-top: 1px;
+  margin-top: 3px;
   margin-left: 15px;
 }
 
-.results {
+.background {
   background-color: #f6f6f6;
+}
+
+.results {
+  max-width: 1400px;
+  margin: auto;
   padding: 50px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .results__title {
   font-size: 1.3rem;
   font-weight: bold;
-  margin-bottom: 30px;
+  width: 100%;
 }
 .results__article {
+  max-width: 45%;
+  margin: 20px 10px;
   height: 250px;
   border-radius: 15px;
   overflow: hidden;
-  margin: 20px 0;
   background-color: white;
   box-shadow: 0 4px 8px #aaaaaa;
   position: relative;
+}
+@media screen and (max-width: 570px) {
+  .results__article {
+    max-width: 100%;
+    margin: 20px 0;
+  }
 }
 .results__article__img {
   object-fit: cover;
@@ -263,6 +324,7 @@ a:visited {
   padding-top: 20px;
   margin-left: 20px;
   margin-bottom: 5px;
+  width: 100%;
 }
 .menu__content__ligne {
   width: 40px;
