@@ -1,0 +1,47 @@
+$loader-dur: 6000ms;
+$num-letter: 8;
+$anim-delay: $loader-dur/$num-letter;
+
+.body__favorite {
+    display: none;
+    .far, .fas {
+        position : absolute;
+        left: 50px;
+        top : 50px;
+        font-size: 3rem;
+    }
+}
+
+.load {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    &__letter {
+        animation : loader $loader-dur backwards infinite ease;
+        @for $i from 1 through $num-letter {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+             }
+        }
+    }
+}
+
+@keyframes loader {
+    0% {
+        transform : translateX(500px);
+        opacity: 0;
+    }
+    25% {
+        transform : translatex(10px);
+        opacity: 1;
+    }
+    75% {
+        transform : translatex(-10px);
+        opacity: 1;
+    }
+    100% {
+        transform : translatex(-500px);
+        opacity: 0;
+    }
+}
