@@ -1,0 +1,38 @@
+.spiner {
+  display: flex;
+  flex-wrap: wrap;
+  height: 130px;
+  width: 130px;
+  justify-content: center;
+  align-content: center;
+}
+.spiner__square {
+  margin: 1px;
+  height: 50px;
+  width: 50px;
+  background-color: grey;
+  animation: spiner backwards infinite ease-in-out;
+}
+.spiner__square--1 {
+  animation-delay: 1000ms;
+  animation-duration: 1000ms;
+}
+.spiner__square--2 {
+  animation-delay: 2000ms;
+  animation-duration: 2000ms;
+}
+.spiner__square--3 {
+  animation-delay: 3000ms;
+  animation-duration: 3000ms;
+}
+
+@keyframes spiner {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
