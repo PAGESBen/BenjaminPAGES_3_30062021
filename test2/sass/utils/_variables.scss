@@ -1,4 +1,9 @@
 $color-primary : grey;
-$anim-dur: 4000ms;
-$num-square: 4;
-$anim-delay: $anim-dur/$num-square;
+$anim-dur: 2000ms;
+
+$anim: (
+  1: ( 0:1, 25:1, 50:0, 100:0 ),
+  2: ( 0:0, 25:1, 50:1, 100:0 ),
+  3: ( 0:0, 25:0, 50:1, 100:1 ),
+  4: ( 0:1, 25:0, 50:0, 100:1 ),
+);

@@ -12,21 +12,32 @@
         height: 50px;
         width: 50px;
         background-color : $color-primary;
-        animation : spiner backwards infinite ease-in-out;
-        @for $i from 1 to 4 {
+        @for $i from 1 to 5 {
             &--#{$i} {
-                animation-delay: $anim-delay * $i;
-                animation-duration: $anim-delay  * $i ;
-            }           
+                animation : spinner-#{$i} infinite ease-in-out;
+            //    animation-delay: $anim-delay * ( $i - 1 );
+                animation-duration: $anim-dur;
+            }
         }
     }
 }
 
-@keyframes spiner {
-    0% {
-        transform : scale(0);
-    }
-    100% {
-        transform : scale(1);
+/**
+    1er  : 0 - 25 %
+    2nd  : 25 - 50 %
+    3ème : 50 - 75 %
+    4ème : 75 - 100 %
+ */
+//@for $i from 1 to 4 {
+//    @keyframes spinner-#{$i} {
+@each $i, $list in $anim {
+    @keyframes spinner-#{$i} {
+        @each $p, $v in $list {
+            #{$p}% {
+                transform : scale($v);
+            }
+        }
     }
 }
+
+//}
