@@ -1,0 +1,32 @@
+@import "./utils/variables"; 
+
+.spiner {
+    display: flex;
+    flex-wrap: wrap;
+    height: 130px;
+    width: 130px;
+    justify-content: center;
+    align-content: center;
+    &__square {
+        margin: 1px;
+        height: 50px;
+        width: 50px;
+        background-color : $color-primary;
+        animation : spiner backwards infinite ease-in-out;
+        @for $i from 1 to 4 {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+                animation-duration: $anim-delay  * $i ;
+            }           
+        }
+    }
+}
+
+@keyframes spiner {
+    0% {
+        transform : scale(0);
+    }
+    100% {
+        transform : scale(1);
+    }
+}
