@@ -22,6 +22,7 @@
             margin-bottom: 5px;
             width: 100%;
         }
+        /* TODO  : Franglais */
         &__ligne {
             width: 40px;
             height: 3px;
@@ -33,6 +34,7 @@
             justify-content: space-between;
             padding:30px 20px 20px 20px;
         }
+        /* TODO  : Franglais */
         &__restaurant-name {
             font-family: $font-logo;
             font-size: 1.5rem;
@@ -65,6 +67,7 @@
     &__btn {
         text-align: center;
         padding: 40px 0 50px 0;
+        /* TODO  : Attention, tu as déjà un btn dans les composants */
         .btn {
             padding : 0.6rem 1.6rem;
             @include shadow;

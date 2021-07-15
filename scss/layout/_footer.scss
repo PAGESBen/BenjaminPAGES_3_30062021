@@ -25,14 +25,18 @@
                 border: 0;
             }
             i {
+                /* TODO : ajouter display inline-block et une largeur (15px) */
+                /* TODO  : Attention aux indentations */
             margin-right: 10px;
             color: white;
             font-size: 0.7rem;
             }
             p {
+                /* TODO  : Attention aux indentations */
             color: white;
             }
             &--flex {
+                /* TODO  : Attention aux indentations */
             display: flex;
             align-items: center;
             }
