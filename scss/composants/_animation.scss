@@ -3,7 +3,7 @@
 
 @for $i from 1 to 10 {
     .gradual-onset--#{$i} {
-        animation : gradual-onset 1000ms #{( $i - 1 ) * 300ms} backwards ease-in-out;
+        animation : gradual-onset 1000ms #{( $i - 1 ) * 200ms} backwards ease-in-out;
     } 
 
 }

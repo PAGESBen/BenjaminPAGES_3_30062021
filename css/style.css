@@ -398,35 +398,35 @@ a:visited {
 }
 
 .gradual-onset--2 {
-  animation: gradual-onset 1000ms 300ms backwards ease-in-out;
+  animation: gradual-onset 1000ms 200ms backwards ease-in-out;
 }
 
 .gradual-onset--3 {
-  animation: gradual-onset 1000ms 600ms backwards ease-in-out;
+  animation: gradual-onset 1000ms 400ms backwards ease-in-out;
 }
 
 .gradual-onset--4 {
-  animation: gradual-onset 1000ms 900ms backwards ease-in-out;
+  animation: gradual-onset 1000ms 600ms backwards ease-in-out;
 }
 
 .gradual-onset--5 {
-  animation: gradual-onset 1000ms 1200ms backwards ease-in-out;
+  animation: gradual-onset 1000ms 800ms backwards ease-in-out;
 }
 
 .gradual-onset--6 {
-  animation: gradual-onset 1000ms 1500ms backwards ease-in-out;
+  animation: gradual-onset 1000ms 1000ms backwards ease-in-out;
 }
 
 .gradual-onset--7 {
-  animation: gradual-onset 1000ms 1800ms backwards ease-in-out;
+  animation: gradual-onset 1000ms 1200ms backwards ease-in-out;
 }
 
 .gradual-onset--8 {
-  animation: gradual-onset 1000ms 2100ms backwards ease-in-out;
+  animation: gradual-onset 1000ms 1400ms backwards ease-in-out;
 }
 
 .gradual-onset--9 {
-  animation: gradual-onset 1000ms 2400ms backwards ease-in-out;
+  animation: gradual-onset 1000ms 1600ms backwards ease-in-out;
 }
 
 @keyframes gradual-onset {
