@@ -1,9 +1,12 @@
 .btn {
-    padding : 0.6rem;
-    border-radius: 1rem;
+    padding : 0.6rem 1.6rem;
+    @include shadow;
+    border-radius: 30px;
     color: white;
     font-weight: bold;
     border: none;
+    padding-left: 30px;
+    padding-right : 30px;
     background: linear-gradient(
         to bottom,
         $color-secondary,
