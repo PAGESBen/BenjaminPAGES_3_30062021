@@ -1,0 +1,22 @@
+
+/*apparition des plats dans le menu du restau*/
+
+@for $i from 1 to 10 {
+    .gradual-onset--#{$i} {
+        animation : gradual-onset 1000ms #{( $i - 1 ) * 300ms} backwards ease-in-out;
+    } 
+
+}
+
+@keyframes gradual-onset {
+    0% {
+        transform : translatey(10px);
+        opacity : 0;
+    }
+    100% {
+        transform : translatey(0);
+        opacity : 1;
+    }
+}
+
+/*fin de l'animation*/

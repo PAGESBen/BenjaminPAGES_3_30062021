@@ -392,4 +392,53 @@ a:visited {
   padding: 40px 0 50px 0;
 }
 
+/*apparition des plats dans le menu du restau*/
+.gradual-onset--1 {
+  animation: gradual-onset 1000ms 0ms backwards ease-in-out;
+}
+
+.gradual-onset--2 {
+  animation: gradual-onset 1000ms 300ms backwards ease-in-out;
+}
+
+.gradual-onset--3 {
+  animation: gradual-onset 1000ms 600ms backwards ease-in-out;
+}
+
+.gradual-onset--4 {
+  animation: gradual-onset 1000ms 900ms backwards ease-in-out;
+}
+
+.gradual-onset--5 {
+  animation: gradual-onset 1000ms 1200ms backwards ease-in-out;
+}
+
+.gradual-onset--6 {
+  animation: gradual-onset 1000ms 1500ms backwards ease-in-out;
+}
+
+.gradual-onset--7 {
+  animation: gradual-onset 1000ms 1800ms backwards ease-in-out;
+}
+
+.gradual-onset--8 {
+  animation: gradual-onset 1000ms 2100ms backwards ease-in-out;
+}
+
+.gradual-onset--9 {
+  animation: gradual-onset 1000ms 2400ms backwards ease-in-out;
+}
+
+@keyframes gradual-onset {
+  0% {
+    transform: translatey(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+/*fin de l'animation*/
+
 /*# sourceMappingURL=style.css.map */
