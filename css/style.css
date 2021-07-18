@@ -93,6 +93,8 @@ a:visited {
   text-align: center;
   padding: 10px;
   position: relative;
+  max-width: 1300px;
+  margin: auto;
 }
 .header__logo {
   position: relative;

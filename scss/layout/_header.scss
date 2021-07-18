@@ -2,6 +2,8 @@
     text-align: center;
     padding: 10px;
     position: relative;
+    max-width: 1300px;
+    margin: auto;
     &__logo {
         position: relative;
         font-family: $font-logo;
