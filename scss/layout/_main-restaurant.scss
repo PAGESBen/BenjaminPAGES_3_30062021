@@ -18,7 +18,7 @@
         top: -30px;
         &__title {
             padding-top: 20px;
-            margin-left: 20px;
+            padding-left: 20px;
             margin-bottom: 5px;
             width: 100%;
         }
@@ -49,17 +49,51 @@
         }
         &__article {
             min-width: 360px;
+            overflow: hidden;
             @include mobile {
                 min-width: 0;
+            }
+            &:hover {
+                cursor : pointer;
+            }
+            &:hover > &__check {
+                margin-right: 0;
+            }
+            &:hover > &__check i {
+                animation: check-turn 500ms ease-out;
+            }
+            &--flex {
+                display: flex;
             }
             &__title {
                 font-weight: bold;
                 margin-bottom : 5px;
             }
             &__description {
+                flex: 1;
                 font-size: 0.9rem;
+                min-width: 0;
                 &--bold {
                     font-weight: bold;
+                }
+                p {
+                    min-width: 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            &__check {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80px;
+                background-color: $color-terciary ;
+                margin-right: -80px;
+                transition: margin 500ms ease-in-out;
+                i {
+                    color: white;
+                    font-size: 1.1rem;
                 }
             }
         }

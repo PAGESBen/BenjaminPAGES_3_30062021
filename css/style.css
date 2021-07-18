@@ -73,11 +73,14 @@ a:visited {
 }
 
 .card {
-  padding: 10px 20px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 4px 8px #aaaaaa;
   margin: 10px 20px;
+}
+.card__content {
+  padding: 10px 20px;
+  width: 100%;
 }
 .card--flex {
   display: flex;
@@ -359,7 +362,7 @@ a:visited {
 }
 .menu__content__title {
   padding-top: 20px;
-  margin-left: 20px;
+  padding-left: 20px;
   margin-bottom: 5px;
   width: 100%;
 }
@@ -391,21 +394,55 @@ a:visited {
 }
 .menu__content__article {
   min-width: 360px;
+  overflow: hidden;
 }
 @media screen and (max-width: 570px) {
   .menu__content__article {
     min-width: 0;
   }
 }
+.menu__content__article:hover {
+  cursor: pointer;
+}
+.menu__content__article:hover > .menu__content__article__check {
+  margin-right: 0;
+}
+.menu__content__article:hover > .menu__content__article__check i {
+  animation: check-turn 500ms ease-out;
+}
+.menu__content__article--flex {
+  display: flex;
+}
 .menu__content__article__title {
   font-weight: bold;
   margin-bottom: 5px;
 }
 .menu__content__article__description {
+  flex: 1;
   font-size: 0.9rem;
+  min-width: 0;
 }
 .menu__content__article__description--bold {
   font-weight: bold;
+}
+.menu__content__article__description p {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__content__article__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  background-color: #99E2D0;
+  margin-right: -80px;
+  transition: margin 500ms ease-in-out;
+}
+.menu__content__article__check i {
+  color: white;
+  font-size: 1.1rem;
 }
 .menu__btn {
   text-align: center;
@@ -460,5 +497,17 @@ a:visited {
   }
 }
 /*fin de l'animation*/
+/*animation check plat*/
+@keyframes check-turn {
+  0% {
+    transform: rotate(0.25turn);
+  }
+  50% {
+    transform: rotate(0.25turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

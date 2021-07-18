@@ -1,0 +1,33 @@
+@import "./utils/variables"; 
+
+.container {
+    display: flex;
+    max-width: 50%;
+    height: 150px;
+    box-shadow: 3px 3px 3px grey;
+    background-color: lighten(grey, 40%);
+    border-radius: 30px;
+    top: 50px;
+    left: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    &:hover > .checkbox {
+        margin-right: 0;
+    }
+}
+.checkbox {
+    background-color: lighten(green, 40%);
+    height: 100%;
+    width: 50%;
+    right: -25%;
+    flex: 1;
+    margin-right: -100%;
+    transition : margin 250ms ease-in-out;
+}
+
+.txt {
+    min-width: 0;
+    flex: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

@@ -20,3 +20,17 @@
 }
 
 /*fin de l'animation*/
+
+/*animation check plat*/
+
+@keyframes check-turn {
+    0% {
+        transform: rotate(0.25turn);
+    }
+    50% {
+        transform: rotate(0.25turn);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}

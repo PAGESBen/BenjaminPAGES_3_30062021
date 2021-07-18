@@ -1,9 +1,12 @@
 .card {
-    padding:  10px 20px;
     background-color: white;
     border-radius: 15px;
     @include shadow;
     margin: 10px 20px;
+    &__content {
+        padding:  10px 20px;
+        width: 100%;
+    }
     &--flex {
         display: flex;
         justify-content: space-between;
