@@ -42,16 +42,17 @@
         &--article-flex {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-around;
             @include mobile {
                 flex-direction: column;
+                align-items: center;
             }
         }
         &__article {
-            min-width: 360px;
+            width: 360px;
             overflow: hidden;
             @include mobile {
-                min-width: 0;
+                width: 90%;
             }
             &:hover {
                 cursor : pointer;
@@ -64,6 +65,7 @@
             }
             &--flex {
                 display: flex;
+                justify-content: space-between;
             }
             &__title {
                 font-weight: bold;
@@ -81,15 +83,16 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                     white-space: nowrap;
+                    margin-right: 10px;
                 }
             }
             &__check {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 80px;
+                width: 60px;
                 background-color: $color-terciary ;
-                margin-right: -80px;
+                margin-right: -60px;
                 transition: margin 500ms ease-in-out;
                 i {
                     color: white;

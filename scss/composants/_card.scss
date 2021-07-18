@@ -2,13 +2,15 @@
     background-color: white;
     border-radius: 15px;
     @include shadow;
-    margin: 10px 20px;
+    margin: 10px 0;
     &__content {
         padding:  10px 20px;
-        width: 100%;
+        min-width: 0;
+        flex:1
     }
     &--flex {
         display: flex;
         justify-content: space-between;
+        min-width: 0;
     }
 }
