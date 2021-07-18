@@ -219,12 +219,32 @@ a:visited {
   border-radius: 1rem;
   box-shadow: 0 4px 8px #aaaaaa;
   background-color: #f6f6f6;
+  z-index: 1;
 }
 @media screen and (max-width: 570px) {
   .howto__step {
     flex-direction: row;
     text-align: left;
   }
+}
+.howto__step:hover::after {
+  opacity: 1;
+}
+.howto__step:hover > .howto__step__icon {
+  color: #9356DC;
+}
+.howto__step::after {
+  content: "";
+  position: absolute;
+  border-radius: 1rem;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #e4d5f6;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
 }
 .howto__step__number {
   position: absolute;
