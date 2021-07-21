@@ -61,7 +61,7 @@ a:visited {
 }
 
 .btn {
-  padding: 0.6rem 1.6rem;
+  padding: 0.9rem 1.6rem;
   box-shadow: 0 4px 8px #aaaaaa;
   border-radius: 30px;
   color: white;
@@ -295,9 +295,10 @@ a:visited {
   font-size: 1.3rem;
   font-weight: bold;
   width: 100%;
+  margin-bottom: 20px;
 }
 .results__article {
-  max-width: 45%;
+  width: 45%;
   margin: 20px 10px;
   height: 250px;
   border-radius: 15px;
@@ -308,8 +309,8 @@ a:visited {
 }
 @media screen and (max-width: 570px) {
   .results__article {
-    max-width: 100%;
-    margin: 20px 0;
+    width: 100%;
+    margin: 10px 0;
   }
 }
 .results__article__img {
