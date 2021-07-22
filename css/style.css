@@ -76,7 +76,6 @@ a:visited {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0 4px 8px #aaaaaa;
-  margin: 10px 0;
 }
 .card__content {
   padding: 10px 20px;
@@ -425,10 +424,12 @@ a:visited {
 .menu__content__article {
   width: 360px;
   overflow: hidden;
+  margin: 10px 20px;
 }
 @media screen and (max-width: 570px) {
   .menu__content__article {
     width: 90%;
+    margin: 10px 0;
   }
 }
 .menu__content__article:hover {

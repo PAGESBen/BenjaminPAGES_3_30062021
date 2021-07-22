@@ -51,8 +51,10 @@
         &__article {
             width: 360px;
             overflow: hidden;
+            margin: 10px 20px ;
             @include mobile {
                 width: 90%;
+                margin : 10px 0;
             }
             &:hover {
                 cursor : pointer;
