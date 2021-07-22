@@ -89,6 +89,30 @@ a:visited {
   min-width: 0;
 }
 
+.favorite {
+  font-size: 1.3rem;
+  position: relative;
+}
+.favorite__1 {
+  position: absolute;
+  right: 50%;
+  z-index: 3;
+  color: #7e7e7e;
+  background-color: #f6f6f6;
+}
+.favorite__1:hover {
+  opacity: 0;
+}
+.favorite__2 {
+  position: absolute;
+  right: 50%;
+  z-index: 1;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .header {
   text-align: center;
   padding: 10px;

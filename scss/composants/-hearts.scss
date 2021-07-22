@@ -1,0 +1,23 @@
+.favorite {
+    font-size: 1.3rem;
+    position: relative;
+    &__1 {
+        position: absolute;
+        right : 50%;
+        z-index : 3;
+        color: $font-secondary-color;
+        background-color: $background-color;
+        &:hover {
+            opacity: 0;
+        }
+    }
+    &__2 {
+        position: absolute;
+        right : 50%;
+        z-index : 1;
+        background: -webkit-linear-gradient($color-secondary, $color-primary);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
