@@ -110,6 +110,7 @@ a:visited {
 }
 .favorite__2:hover {
   opacity: 1;
+  transition: opacity 500ms ease-in-out;
 }
 
 .header {
