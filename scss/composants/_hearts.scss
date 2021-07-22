@@ -2,22 +2,22 @@
     font-size: 1.3rem;
     position: relative;
     &__1 {
+        color: $font-secondary-color;
         position: absolute;
         right : 50%;
-        z-index : 3;
-        color: $font-secondary-color;
-        background-color: $background-color;
-        &:hover {
-            opacity: 0;
-        }
+        z-index : 1;
     }
     &__2 {
         position: absolute;
         right : 50%;
-        z-index : 1;
+        z-index : 2;
         background: -webkit-linear-gradient($color-secondary, $color-primary);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
     }
 }

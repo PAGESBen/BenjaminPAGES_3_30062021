@@ -25,7 +25,6 @@
         height: 250px;
         border-radius: 15px;
         overflow: hidden;
-
         background-color: white;
         @include shadow;
         position: relative;
@@ -44,11 +43,9 @@
             right: 12px;
             top: 12px;
         }
-        &__favorite {
-            position: absolute;
-            right: 20px;
-            bottom: 25px;
-            font-size: 1.3em;
+        &--flex {
+            display: flex;
+            justify-content: space-between;
         }
         &__title {
             font-weight : bold;
@@ -56,6 +53,10 @@
         }
         &__location {
             margin-left: 10px;
+        }
+        &__favorite {
+            width: 40px;
+            height: 100%;
         }
     }
 }
