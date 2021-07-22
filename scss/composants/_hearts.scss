@@ -1,20 +1,23 @@
 .favorite {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     position: relative;
+    height: 100%;
+    width: 40px;
     &__1 {
         color: $font-secondary-color;
         position: absolute;
-        right : 50%;
         z-index : 1;
+        transform: translateY(-50%);
     }
     &__2 {
         position: absolute;
-        right : 50%;
+        transform: translateY(-50%);
         z-index : 2;
         background: -webkit-linear-gradient($color-secondary, $color-primary);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        /*mettre aussi la propriété transparent sasns le webkit*/
         opacity: 0;
         &:hover {
             opacity: 1;

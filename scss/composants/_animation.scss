@@ -5,7 +5,6 @@
     .gradual-onset--#{$i} {
         animation : gradual-onset 1000ms #{( $i - 1 ) * 200ms} backwards ease-in-out;
     } 
-
 }
 
 @keyframes gradual-onset {

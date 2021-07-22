@@ -46,6 +46,7 @@
         &--flex {
             display: flex;
             justify-content: space-between;
+            align-items: center;
         }
         &__title {
             font-weight : bold;
@@ -53,10 +54,6 @@
         }
         &__location {
             margin-left: 10px;
-        }
-        &__favorite {
-            width: 40px;
-            height: 100%;
         }
     }
 }
