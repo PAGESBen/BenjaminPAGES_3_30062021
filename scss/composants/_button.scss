@@ -7,9 +7,25 @@
     border: none;
     padding-left: 30px;
     padding-right : 30px;
+    position: relative;
     background: linear-gradient(
         to bottom,
         $color-secondary,
         $color-primary
     );
+    &::after {
+        position: absolute;
+        content: unset;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-radius: 30px;
+        background: linear-gradient(
+            to bottom,
+            lighten($color-secondary,30%),
+            lighten($color-primary,30%)
+        );
+        z-index: 30;
+    }
 }

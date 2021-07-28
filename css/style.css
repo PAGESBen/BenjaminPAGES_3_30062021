@@ -60,6 +60,74 @@ a:visited {
   color: black;
 }
 
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 3000;
+  animation: loader-visibility 0s 3s forwards;
+}
+.container__loader {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  border-top-color: #9356DC;
+  border-bottom-color: #9356DC;
+  animation: spin 1500ms linear infinite;
+}
+.container__loader::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: 5PX;
+  right: 5px;
+  left: 5px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  border-top-color: #9356DC;
+  border-bottom-color: #9356DC;
+  opacity: 0.5;
+  animation: spin-reverse 4000ms linear infinite;
+}
+.container__loader::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  right: 20px;
+  left: 20px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  opacity: 0.2;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes loader-visibility {
+  100% {
+    visibility: hidden;
+  }
+}
 .btn {
   padding: 0.9rem 1.6rem;
   box-shadow: 0 4px 8px #aaaaaa;
@@ -69,7 +137,19 @@ a:visited {
   border: none;
   padding-left: 30px;
   padding-right: 30px;
+  position: relative;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
+}
+.btn::after {
+  position: absolute;
+  content: unset;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 30px;
+  background: linear-gradient(to bottom, white, #e4d5f6);
+  z-index: 30;
 }
 
 .card {
