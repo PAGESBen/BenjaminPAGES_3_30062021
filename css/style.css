@@ -140,16 +140,9 @@ a:visited {
   position: relative;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
 }
-.btn::after {
-  position: absolute;
-  content: unset;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  border-radius: 30px;
-  background: linear-gradient(to bottom, white, #e4d5f6);
-  z-index: 30;
+.btn:hover {
+  background: linear-gradient(to bottom, #ff88de, #9b63df);
+  box-shadow: 0 6px 10px #909090;
 }
 
 .card {

@@ -13,19 +13,12 @@
         $color-secondary,
         $color-primary
     );
-    &::after {
-        position: absolute;
-        content: unset;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        border-radius: 30px;
+    &:hover {
         background: linear-gradient(
             to bottom,
-            lighten($color-secondary,30%),
-            lighten($color-primary,30%)
+            lighten($color-secondary, 3%),
+            lighten($color-primary, 3%)
         );
-        z-index: 30;
+        @include hover-shadow;
     }
 }

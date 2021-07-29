@@ -2,6 +2,11 @@
     box-shadow: 0 4px 8px darken($background-color, 30%);
 }
 
+@mixin hover-shadow {
+    box-shadow: 0 6px 10px darken($background-color, 40%);
+}
+
+
 @mixin mobile {
     @media screen and (max-width : map-get($breakpoint, mobile)) {
         @content
