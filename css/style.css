@@ -169,22 +169,16 @@ a:visited {
 
 .favorite {
   font-size: 1.4rem;
-  position: relative;
-  height: 100%;
-  width: 40px;
 }
 .favorite__1 {
   color: #7e7e7e;
   position: absolute;
   z-index: 1;
-  transform: translateY(-50%);
 }
 .favorite__2 {
   position: absolute;
-  transform: translateY(-50%);
   z-index: 2;
   background: linear-gradient(#FF79DA, #9356DC);
-  /* background-clip: text; */
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
@@ -435,10 +429,13 @@ a:visited {
   right: 12px;
   top: 12px;
 }
-.results__article--flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.results__article--relative {
+  position: relative;
+}
+.results__article__favorite {
+  position: absolute;
+  right: 50px;
+  top: 10%;
 }
 .results__article__title {
   font-weight: bold;
@@ -483,15 +480,15 @@ a:visited {
   margin-left: 20px;
   margin-bottom: 10px;
 }
-.menu__content--flex {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 20px 20px 20px;
-  align-items: center;
+.menu__content__favorite {
+  position: absolute;
+  top: 35px;
+  right: 50px;
 }
 .menu__content__restaurant-name {
   font-family: "Shrikhand", cursive;
   font-size: 1.5rem;
+  padding: 30px 20px 20px 20px;
 }
 .menu__content--article-flex {
   display: flex;

@@ -43,10 +43,13 @@
             right: 12px;
             top: 12px;
         }
-        &--flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        &--relative {
+            position: relative;
+        }
+        &__favorite {
+            position: absolute;
+            right: 50px;
+            top: 10%;
         }
         &__title {
             font-weight : bold;

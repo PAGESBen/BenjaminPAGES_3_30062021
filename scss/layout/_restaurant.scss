@@ -29,15 +29,15 @@
             margin-left: 20px;
             margin-bottom: 10px;
         }
-        &--flex {
-            display: flex;
-            justify-content: space-between;
-            padding: 30px 20px 20px 20px;
-            align-items: center;
+        &__favorite {
+            position: absolute;
+            top: 35px;
+            right: 50px;
         }
         &__restaurant-name {
             font-family: $font-logo;
             font-size: 1.5rem;
+            padding: 30px 20px 20px 20px;
         }
         &--article-flex {
             display: flex;
