@@ -461,6 +461,11 @@ a:visited {
   width: 100%;
   object-fit: cover;
 }
+@media screen and (max-width: 570px) {
+  .menu__main-img img {
+    height: 260px;
+  }
+}
 .menu__content {
   border-radius: 30px 30px 0 0;
   background-color: #f6f6f6;
