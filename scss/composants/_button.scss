@@ -1,4 +1,6 @@
 .btn {
+    display: inline-block;
+    color: white !important;
     padding : 0.9rem 1.6rem;
     @include shadow;
     border-radius: 30px;

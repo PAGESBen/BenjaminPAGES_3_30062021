@@ -133,6 +133,8 @@ a:visited {
   }
 }
 .btn {
+  display: inline-block;
+  color: white !important;
   padding: 0.9rem 1.6rem;
   box-shadow: 0 4px 8px #aaaaaa;
   border-radius: 30px;
@@ -181,16 +183,17 @@ a:visited {
   position: absolute;
   transform: translateY(-50%);
   z-index: 2;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
+  /* background-clip: text; */
   -webkit-background-clip: text;
-  background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
-  /*mettre aussi la propriété transparent sasns le webkit*/
   opacity: 0;
 }
 .favorite__2:hover {
   opacity: 1;
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms linear;
 }
 
 .header {
