@@ -19,8 +19,13 @@
         background-color: $background-color;
         position: relative;
         top: -30px;
+        &__restaurant-name {
+            font-family: $font-logo;
+            font-size: 1.5rem;
+            padding: 30px 20px 5px 20px;
+        }
         &__title {
-            padding-top: 20px;
+            padding-top: 35px;
             padding-left: 20px;
             margin-bottom: 5px;
             width: 100%;
@@ -36,11 +41,6 @@
             position: absolute;
             top: 35px;
             right: 50px;
-        }
-        &__restaurant-name {
-            font-family: $font-logo;
-            font-size: 1.5rem;
-            padding: 30px 20px 20px 20px;
         }
         &--article-flex {
             display: flex;
